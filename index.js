@@ -21,12 +21,12 @@ inquirer
     {
       type: 'input',
       message: 'What is your project name?',
-      name: 'comm',
+      name: 'title',
     },
     {
       type: 'input',
       message: 'Description of your project?',
-      name: 'comm',
+      name: 'description',
     },
     {
       type: 'list',
@@ -61,7 +61,7 @@ inquirer
     //fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
      // err ? console.log(err) : console.log('Success!')
 
-      writeToFile(filename, generateMarkdown(responsesFromInquirer)), (err) =>
+      writeToFile(filename, generateMarkdown(data)), (err) =>
        err ? console.log(err) : console.log('Success!');
   });
 //const answers = ({name, lang, comm})  
