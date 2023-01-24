@@ -56,18 +56,19 @@ inquirer
     },
   ])
   .then((data) => {
-    const filename = `${data.username.toLowerCase().split(' ').join('')}.json`;
+    const filename = `README.md`;
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Success!')
-    );
+    //fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
+     // err ? console.log(err) : console.log('Success!')
+
+      writeToFile(filename, generateMarkdown(responsesFromInquirer)), (err) =>
+       err ? console.log(err) : console.log('Success!');
   });
 //const answers = ({name, lang, comm})  
 // TODO: Create a function to write README file
 //function writeToFile(name, data) {}
 
 // TODO: Create a function to initialize app
-writeToFile('README.md', generateMarkdown(responsesFromInquirer));
 };
 // Function call to initialize app
 init();
