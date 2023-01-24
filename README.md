@@ -10,7 +10,7 @@
   7. [GitHub](#GitHub)
   8. [E-mail](#E-mail)
 # Description
-Generates a README.md file using node.js and inquirer prompt. 
+Generates a README.md file using node.js and inquirer. 
 # Installation
 npm i
 # Usage
@@ -20,7 +20,7 @@ have fun!
 # Tests
 npm test
 # License
-![License: GPL 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 # GitHub
 ngardunia
 # E-mail
