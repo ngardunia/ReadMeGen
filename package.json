@@ -10,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "8.2.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngardunia/ReadMeGen.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ngardunia/ReadMeGen/issues"
+  },
+  "homepage": "https://github.com/ngardunia/ReadMeGen#readme"
 }
